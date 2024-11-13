@@ -32,8 +32,7 @@ function goToQuestion6() {
 }
 
 function finishDate() {
-    document.getElementById('question6').style.display = 'none';
-    document.getElementById('finalMessage').style.display = 'block';
+    alert("Date scheduled!");
 }
 
 function resetPage() {
