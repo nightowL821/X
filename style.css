@@ -1,41 +1,56 @@
-function checkName() {
-    const name = document.getElementById('name').value.toLowerCase();
-    const validNames = ["mrittika", "tanbin rubayra mrittika", "babesh"];
-    
-    if (validNames.includes(name)) {
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('question2').style.display = 'block';
-    } else {
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('incorrectPage').style.display = 'block';
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/1b.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-function goToQuestion3() {
-    document.getElementById('question2').style.display = 'none';
-    document.getElementById('question3').style.display = 'block';
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-function goToQuestion4() {
-    document.getElementById('question3').style.display = 'none';
-    document.getElementById('question4').style.display = 'block';
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
 }
 
-function goToQuestion5() {
-    document.getElementById('question4').style.display = 'none';
-    document.getElementById('question5').style.display = 'block';
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-function goToQuestion6() {
-    document.getElementById('question5').style.display = 'none';
-    document.getElementById('question6').style.display = 'block';
+button:hover {
+    background-color: #45a049;
 }
 
-function finishDate() {
-    document.getElementById('question6').style.display = 'none';
-    document.getElementById('finalMessage').style.display = 'block';
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-function resetPage() {
-    location.reload();
+img {
+    width: 500px; /* Images are now doubled in size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
