@@ -31,8 +31,9 @@ function goToQuestion6() {
     document.getElementById('question6').style.display = 'block';
 }
 
-function finishDate() {
-    alert("Date scheduled!");
+function goToFinalMessage() {
+    document.getElementById('question6').style.display = 'none';
+    document.getElementById('finalMessage').style.display = 'block';
 }
 
 function resetPage() {
