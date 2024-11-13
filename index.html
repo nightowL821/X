@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- What's your name? -->
+    <!-- Question 1 -->
     <div class="container" id="question1">
         <img src="images/1.png" alt="Image 1" class="image">
         <h1>What's your name?</h1>
@@ -16,7 +16,7 @@
         <button onclick="checkName()">Submit</button>
     </div>
 
-    <!-- Alo babeessshhh (Visible after Question 1) -->
+    <!-- Question 2 -->
     <div class="container" id="question2" style="display:none;">
         <img src="images/2.jpg" alt="Image 2" class="image">
         <h1>Alo babeessshhh</h1>
@@ -24,7 +24,7 @@
         <button onclick="goToQuestion3()">Submit</button>
     </div>
 
-    <!-- Select date (Visible after Question 2) -->
+    <!-- Question 3 -->
     <div class="container" id="question3" style="display:none;">
         <img src="images/3.jpg" alt="Image 3" class="image">
         <h1>Which date do you have in mind for our বেড়ু?</h1>
@@ -32,7 +32,7 @@
         <button onclick="goToQuestion4()">Submit</button>
     </div>
 
-    <!-- Time selection (Visible after Question 3) -->
+    <!-- Question 4 -->
     <div class="container" id="question4" style="display:none;">
         <img src="images/4.jpg" alt="Image 4" class="image">
         <h1>What time should our বেড়ু begin?</h1>
@@ -40,7 +40,7 @@
         <button onclick="goToQuestion5()">Submit</button>
     </div>
 
-    <!-- Meeting location (Visible after Question 4) -->
+    <!-- Question 5 -->
     <div class="container" id="question5" style="display:none;">
         <img src="images/5.jpg" alt="Image 5" class="image">
         <h1>Where do you wanna meet?</h1>
@@ -48,23 +48,21 @@
         <button onclick="goToQuestion6()">Submit</button>
     </div>
 
-    <!-- Food choice (Visible after Question 5) -->
+    <!-- Question 6 -->
     <div class="container" id="question6" style="display:none;">
         <img src="images/6.jpg" alt="Image 6" class="image">
         <h1>What would you like to eat?</h1>
         <input type="text" id="food" placeholder="Enter food choice">
-        <button onclick="finishDate()">Submit</button>
+        <button onclick="goToFinalMessage()">Submit</button>
     </div>
 
-    
-    <div class="container" id="question7" style="display:none;">
+    <!-- Final Message -->
+    <div class="container" id="finalMessage" style="display:none;">
         <img src="images/7.jpg" alt="Image 7" class="image">
         <h1>Can't wait to meet you my বুতিপুল বাবেশ। </h1>
-        <input type="text" id="food" placeholder="Enter food choice">
-        <button onclick="finishDate()">Submit</button>
     </div>
 
-    <!-- Incorrect answer page -->
+    <!-- Incorrect Answer Page -->
     <div class="container" id="incorrectPage" style="display:none;">
         <img src="images/x.jpg" alt="Not my Babesh" class="image">
         <h1>You are not my Babesh!</h1>
