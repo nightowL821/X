@@ -44,7 +44,7 @@ h1 {
 }
 
 img {
-    width: 500px; /* Images are now doubled in size */
+    width: 250px; /* Increased image size */
     height: auto;
     margin-bottom: 20px;
 }
